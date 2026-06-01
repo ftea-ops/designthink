@@ -1,1 +1,43 @@
-
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoリスト</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <p class="note">※ このサイトはお茶の水女子大学共創工学部「デザイン思考とロジックモデル」講義の一環で作成されています（チームF）</p>
+        <h1>ToDoリスト</h1>
+        <div class="input-section">
+            <div class="input-row">
+                <input type="text" id="taskInput" placeholder="新しいタスクを入力してください">
+                <div class="category-section">
+                    <select id="categorySelect">
+                        <option value="">カテゴリを選択</option>
+                    </select>
+                    <div class="category-add">
+                        <input type="text" id="newCategoryInput" placeholder="追加">
+                        <button id="addCategoryBtn">+</button>
+                    </div>
+                </div>
+                <select id="prioritySelect">
+                    <option value="low">低</option>
+                    <option value="medium">中</option>
+                    <option value="high">高</option>
+                </select>
+            </div>
+            <div class="filter-section">
+                <label for="filterSelect">フィルタ:</label>
+                <select id="filterSelect">
+                    <option value="all">すべて</option>
+                </select>
+            </div>
+            <button id="addTaskBtn">追加</button>
+        </div>
+        <ul id="taskList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
