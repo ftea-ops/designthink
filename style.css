@@ -1,1 +1,211 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9ecef;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    max-width: 90%;
+}
+
+h1 {
+    text-align: center;
+    color: #495057;
+}
+
+.note {
+    text-align: center;
+    font-size: 12px;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.input-row {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.category-section {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.category-section select {
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.category-add {
+    display: flex;
+    align-items: center;
+}
+
+.category-add input {
+    width: 80px;
+    padding: 5px;
+    border: 1px solid #ced4da;
+    border-radius: 4px 0 0 4px;
+    font-size: 12px;
+}
+
+.category-add button {
+    padding: 5px 8px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.category-add button:hover {
+    background-color: #218838;
+}
+
+.filter-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.filter-section label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.filter-section select {
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+}
+
+select {
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-left: none;
+    font-size: 16px;
+}
+
+#categorySelect {
+    border-radius: 0;
+}
+
+#prioritySelect {
+    border-radius: 0 4px 4px 0;
+}
+
+#addTaskBtn {
+    padding: 10px 15px;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#addTaskBtn:hover {
+    background-color: #5a6268;
+}
+
+#taskList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #dee2e6;
+    border-left: 5px solid #6c757d;
+}
+
+.task-item.high {
+    border-left-color: #dc3545;
+}
+
+.task-item.medium {
+    border-left-color: #ffc107;
+}
+
+.task-item.low {
+    border-left-color: #28a745;
+}
+
+.task-item.completed {
+    opacity: 0.5;
+    text-decoration: line-through;
+    color: #adb5bd;
+}
+
+.task-details {
+    flex: 1;
+}
+
+.task-text {
+    font-weight: bold;
+}
+
+.task-meta {
+    font-size: 12px;
+    color: #6c757d;
+}
+
+.task-item button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.complete-btn {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.complete-btn:hover {
+    background-color: #138496;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
